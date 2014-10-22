@@ -2,10 +2,10 @@ var blocmetrics = (function() {
   var my = {};
   var _bm_event = {};
 
-  my.track = function(name, arg_1, arg_2) {
+  my.track = function(name, property_1, property_2) {
     _bm_event.name = name;
-    _bm_event.property_1 = arg_1.property_1;
-    _bm_event.property_2 = arg_2.property_2;
+    _bm_event.property_1 = property_1;
+    _bm_event.property_2 = property_2;
 
     _send_data();
   };
@@ -23,4 +23,4 @@ var blocmetrics = (function() {
   };
 
   return my;
-})();    
+})();  
