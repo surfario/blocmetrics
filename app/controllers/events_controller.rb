@@ -7,6 +7,7 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @chart_events = Event.where(name: 'LINK').group_by(&:property_1)
   end
 
   # GET /events/1
