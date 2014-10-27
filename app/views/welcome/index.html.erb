@@ -2,7 +2,15 @@
 <p>Track events on your website</p>
 
 <% content_for :javascript_includes do %>
-    <%= javascript_include_tag "charts.js" %>
+    <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
 <% end %>
+
+<%= pie_chart Event.group(:property_1).count %>
+
+<%= column_chart Event.group(:property_2).count %>
+
+
+
+
 
 
