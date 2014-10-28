@@ -1,4 +1,4 @@
-*Blocmetrics* let's you easily track events on your website using Javascript.
+**Blocmetrics** let's you easily track events on your website using Javascript.
 
 Sample Implmentation--
 
@@ -12,8 +12,8 @@ Track click events using Jquery, by adding this snippet to your website:
   });    
 </script>
 
-'Property_1': Is a link on your website.  (Add the .event_object id)
-'Property_2': Could be a user_email or any other property you want to track
+'Property_1': Could be a link on your site.  (Add the .event_object id)
+'Property_2': Could be a user property you want to track
 
-You can see the results by going to localhost:4000
+You can see the results by going to localhost:4000 (for now!)
 
