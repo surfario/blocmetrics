@@ -17,3 +17,15 @@ Track click events using Jquery, by adding this snippet to your website:
 
 You can see the results by going to localhost:4000 (for now!)
 
+Sample implementation on Squidlist:
+
+<script>
+  $(document).ready(function() {
+    $(".event_object").on("click", function(e) {
+      blocmetrics.track('LINK', $(this).attr("href"), "<%= @current_user ? @current_user.email : 'not signed in' %>");
+      window.location($(this).attr("href"));
+    });
+  });    
+</script>
+
+
